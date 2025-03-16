@@ -1,7 +1,10 @@
 const Experience = () => {
   return (
-    <section id="experience" className="text-white p-10 max-w-3xl mx-auto">
-      <h2 className="text-3xl font-bold text-blue-400 mb-6">Experience</h2>
+    <section id="experience" className="text-white px-6 md:p-10 max-w-3xl mx-auto">
+      <h2 className="text-3xl font-bold text-blue-400 mb-6 text-center md:text-left">
+  Experience
+      </h2>
+
       <div className="space-y-8">
         {/* Experience Item 1 */}
         <div className="p-6 rounded-lg shadow-lg bg-transparent border border-gray-700 transition-all duration-300 hover:shadow-blue-500/50 hover:border-blue-400">
