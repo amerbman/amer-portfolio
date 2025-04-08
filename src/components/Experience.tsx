@@ -30,16 +30,16 @@ const Experience = () => {
         </div>
 
         {/* Experience Item 2 */}
-        <div className="p-6 rounded-lg shadow-lg bg-transparent border border-gray-700 transition-all duration-300 hover:shadow-blue-500/50 hover:border-blue-400">
+        {/* <div className="p-6 rounded-lg shadow-lg bg-transparent border border-gray-700 transition-all duration-300 hover:shadow-blue-500/50 hover:border-blue-400">
           <div className="text-gray-400 text-sm">December 2024 – Present</div>
           <h3 className="text-xl font-semibold text-white">Marketing Manager · Saleh Saeed Baosman Trading Est. </h3>
           <p className="text-gray-300 mt-2">
           Developed and executed marketing strategies to boost brand presence, sales, and digital engagement.
           </p>
-        </div>
+        </div> */}
 
          {/* Experience Item 3 */}
-        <div className="p-6 rounded-lg shadow-lg bg-transparent border border-gray-700 transition-all duration-300 hover:shadow-blue-500/50 hover:border-blue-400">
+        {/* <div className="p-6 rounded-lg shadow-lg bg-transparent border border-gray-700 transition-all duration-300 hover:shadow-blue-500/50 hover:border-blue-400">
           <div className="text-gray-400 text-sm">April 2024 – June 2024 </div>
           <h3 className="text-xl font-semibold text-white">Technical Support Specialist  · Tasheel Information Technology </h3>
           <p className="text-gray-300 mt-2">
@@ -56,7 +56,7 @@ const Experience = () => {
               Json
             </span>
           </div>
-        </div>
+        </div> */}
 
         {/* Experience Item 4 */}
         <div className="p-6 rounded-lg shadow-lg bg-transparent border border-gray-700 transition-all duration-300 hover:shadow-blue-500/50 hover:border-blue-400">
@@ -87,7 +87,7 @@ const Experience = () => {
         {/* Experience Item 5 */}
         <div className="p-6 rounded-lg shadow-lg bg-transparent border border-gray-700 transition-all duration-300 hover:shadow-blue-500/50 hover:border-blue-400">
           <div className="text-gray-400 text-sm">August 2021 – August 2022  </div>
-          <h3 className="text-xl font-semibold text-white">Technical Support  · Afaqy Tech for Tracking and Security Solutions </h3>
+          <h3 className="text-xl font-semibold text-white">Pre-Sales Engineer  · Afaqy Tech for Tracking and Security Solutions </h3>
           <p className="text-gray-300 mt-2">
           Resolved technical issues, advised on product selection, and led GPS system installations for mobile towers during Riyadh Season.
           </p>
