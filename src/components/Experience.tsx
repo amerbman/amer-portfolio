@@ -11,7 +11,10 @@ const Experience = () => {
         {/* Experience Item 1 */}
         <div className="p-6 rounded-lg shadow-lg bg-transparent border border-gray-700 transition-all duration-300 hover:shadow-blue-500/50 hover:border-blue-400" itemScope itemType="http://schema.org/JobPosting">
           <div className="text-gray-400 text-sm" itemProp="datePosted">September 2024 – Present</div>
-          <h3 className="text-xl font-semibold text-white" itemProp="title">Freelance Web Developer · Self-Employed</h3>
+          <h3 className="text-xl font-semibold text-white" itemProp="title">
+                Freelance Application Engineer & Web Developer <br /> FL-856606454 · Trusted Raed Freelancer
+              </h3>
+
           <p className="text-gray-300 mt-2" itemProp="description">
             Redesigned the SSBTE website with modern front-end technologies, improving UI/UX, performance, and SEO.
           </p>
@@ -48,8 +51,8 @@ const Experience = () => {
 
         {/* Experience Item 4 */}
         <div className="p-6 rounded-lg shadow-lg bg-transparent border border-gray-700 transition-all duration-300 hover:shadow-blue-500/50 hover:border-blue-400" itemScope itemType="http://schema.org/JobPosting">
-          <div className="text-gray-400 text-sm" itemProp="datePosted">September 2022 – January 2023</div>
-          <h3 className="text-xl font-semibold text-white" itemProp="title">Systems Analyst · SITACO</h3>
+          <div className="text-gray-400 text-sm" itemProp="datePosted">September 2022 – February 2023</div>
+          <h3 className="text-xl font-semibold text-white" itemProp="title">Information Systems Co-op Intern · SITACO</h3>
           <p className="text-gray-300 mt-2" itemProp="description">
             Redesigned the company website with React, implemented trading software automation, and optimized database management for efficiency.
           </p>
