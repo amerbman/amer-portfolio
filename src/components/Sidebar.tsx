@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
@@ -14,7 +15,7 @@ const Sidebar = () => {
           const targetElement = document.getElementById(targetId);
           if (targetElement) {
             targetElement.scrollIntoView({ behavior: "smooth" });
-            setIsOpen(false); // Close menu when clicking a link
+            setIsOpen(false);
           }
         }
       });
@@ -29,7 +30,6 @@ const Sidebar = () => {
 
   return (
     <div className="text-white bg-transparent p-4 md:p-6 rounded-lg h-full flex flex-col items-center justify-center font-mono tracking-widest w-full md:w-[90%]">
-      {/* Hamburger Menu for Mobile */}
       <div className="absolute top-5 left-5 md:hidden">
         <button onClick={() => setIsOpen(!isOpen)} className="text-white">
           {isOpen ? (
@@ -40,17 +40,28 @@ const Sidebar = () => {
         </button>
       </div>
 
-      <h1 className="text-5xl font-bold text-center uppercase text-blue-300 drop-shadow-[0_0_10px_rgba(0,191,255,0.8)] animate-[pulse_2s_ease-in-out_infinite] mt-10 leading-[1.2] w-full break-words">
-        Amer <br /> Baosman
-      </h1>
-      <p className="text-blue-400 mt-6 text-center text-lg max-w-sm leading-relaxed">
-        Front End Developer <br />
-        passionate about crafting <br />
-        accessible, pixel-perfect digital experiences <br />
-        for the web.
-      </p>
+      <section
+        itemScope
+        itemType="http://schema.org/Person"
+        className="w-full flex flex-col items-center px-4"
+      >
+        <h1
+          itemProp="name"
+          className="text-5xl font-bold text-center uppercase text-blue-300 drop-shadow-[0_0_10px_rgba(0,191,255,0.8)] animate-[pulse_2s_ease-in-out_infinite] mt-10 leading-[1.2] w-full break-words"
+        >
+          Amer <br /> Baosman
+        </h1>
 
-      {/* Mobile Dropdown Menu */}
+        <p
+          itemProp="jobTitle"
+          className="text-blue-400 mt-6 text-center text-lg max-w-sm leading-relaxed"
+        >
+          Front-End Developer and Application Engineer based in Saudi Arabia,<br />
+          passionate about crafting accessible, pixel-perfect web applications <br />
+          with a focus on performance and clean code.
+        </p>
+      </section>
+
       <nav
         className={`absolute top-16 left-0 w-full bg-black bg-opacity-80 p-4 transition-all duration-300 md:relative md:bg-transparent md:top-auto md:left-auto md:w-auto ${
           isOpen ? "block" : "hidden"
@@ -69,7 +80,7 @@ const Sidebar = () => {
 
       <div className="mt-10 flex space-x-4">
         <a href="https://github.com/amerbman" className="text-gray-400 hover:text-blue-400 uppercase">GitHub</a>
-        <a href="www.linkedin.com/in/amer-baosman" className="text-gray-400 hover:text-blue-400 uppercase">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/amer-baosman/" className="text-gray-400 hover:text-blue-400 uppercase">LinkedIn</a>
       </div>
     </div>
   );
