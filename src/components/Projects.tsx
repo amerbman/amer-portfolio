@@ -13,12 +13,27 @@ const projects = [
     tech: ["React", "TypeScript", "TailwindCSS", "Three.js", "Vite"],
     link: "https://amer-baosman.com/",
   },
+  {
+    title: "Flora E-commerce",
+    description: "A full-featured e-commerce website built using Next.js 15 App Router, TypeScript, TailwindCSS, and Supabase. It includes product pages, cart, authentication, multi-language support, and HyperPay integration.",
+    image: "/assets/flora-preview.png",
+    tech: ["Next.js", "TypeScript", "TailwindCSS", "Supabase", "HyperPay"],
+    link: "https://flora-ecommerce-five.vercel.app/en",
+  },
 ];
 
 const Projects = () => {
   return (
-    <section id="projects" className="text-white p-10 max-w-3xl mx-auto" itemScope itemType="https://schema.org/CreativeWork">
-      <h2 className="text-3xl font-bold text-blue-400 mb-6 text-center md:text-left" itemProp="name">
+    <section
+      id="projects"
+      className="text-white p-10 max-w-3xl mx-auto"
+      itemScope
+      itemType="https://schema.org/CreativeWork"
+    >
+      <h2
+        className="text-3xl font-bold text-blue-400 mb-6 text-center md:text-left"
+        itemProp="name"
+      >
         Projects
       </h2>
 
@@ -43,12 +58,22 @@ const Projects = () => {
 
             <div className="text-center md:text-left flex flex-col items-center md:items-start">
               <div>
-                <h3 className="text-xl font-semibold text-white" itemProp="headline">{project.title}</h3>
-                <p className="text-gray-300 mt-1" itemProp="description">{project.description}</p>
+                <h3
+                  className="text-xl font-semibold text-white"
+                  itemProp="headline"
+                >
+                  {project.title}
+                </h3>
+                <p className="text-gray-300 mt-1" itemProp="description">
+                  {project.description}
+                </p>
 
                 <div className="flex flex-wrap gap-2 mt-2 justify-center md:justify-start">
                   {project.tech.map((tech, i) => (
-                    <span key={i} className="bg-blue-500/20 text-blue-400 px-3 py-1 rounded-full text-sm border border-blue-400">
+                    <span
+                      key={i}
+                      className="bg-blue-500/20 text-blue-400 px-3 py-1 rounded-full text-sm border border-blue-400"
+                    >
                       {tech}
                     </span>
                   ))}
