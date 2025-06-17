@@ -7,18 +7,18 @@ const projects = [
     link: "https://ssbte.net/",
   },
   {
-    title: "Personal Developer Portfolio",
-    description: "A fully responsive, interactive portfolio showcasing my projects, experience, and technical skills. Built with modern frontend technologies, it features a sleek UI, dynamic animations, and a space-themed aesthetic.",
-    image: "/assets/my-portfolio.png",
-    tech: ["React", "TypeScript", "TailwindCSS", "Three.js", "Vite"],
-    link: "https://amer-baosman.com/",
-  },
-  {
     title: "Flora E-commerce",
     description: "A full-featured e-commerce website built using Next.js 15 App Router, TypeScript, TailwindCSS, and Supabase. It includes product pages, cart, authentication, multi-language support, and HyperPay integration.",
     image: "/assets/flora-preview.png",
     tech: ["Next.js", "TypeScript", "TailwindCSS", "Supabase", "HyperPay"],
     link: "https://flora-ecommerce-five.vercel.app/en",
+  },
+  {
+    title: "Personal Developer Portfolio",
+    description: "A fully responsive, interactive portfolio showcasing my projects, experience, and technical skills. Built with modern frontend technologies, it features a sleek UI, dynamic animations, and a space-themed aesthetic.",
+    image: "/assets/my-portfolio.png",
+    tech: ["React", "TypeScript", "TailwindCSS", "Three.js", "Vite"],
+    link: "https://amer-baosman.com/",
   },
 ];
 
