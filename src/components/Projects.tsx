@@ -14,6 +14,13 @@ const projects = [
     link: "https://flora-ecommerce-five.vercel.app/en",
   },
   {
+    title: "E-commerce Demo",
+    description: "A full-featured e-commerce website built using Next.js 15 App Router, TypeScript, TailwindCSS, and Supabase. It includes product pages, cart, authentication, multi-language support, and HyperPay integration.",
+    image: "/assets/ecommerceDemo-preview.png",
+    tech: ["Next.js", "TypeScript", "TailwindCSS", "Supabase", "HyperPay"],
+    link: "https://demo-ecommerce-five-sepia.vercel.app/en",
+  },
+  {
     title: "Personal Developer Portfolio",
     description: "A fully responsive, interactive portfolio showcasing my projects, experience, and technical skills. Built with modern frontend technologies, it features a sleek UI, dynamic animations, and a space-themed aesthetic.",
     image: "/assets/my-portfolio.png",
