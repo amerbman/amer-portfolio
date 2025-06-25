@@ -53,22 +53,24 @@ function Particles() {
   );
 
   // on each frame, push stars forward along +Z
-  useFrame((_, delta) => {
-    const posAttr = pointsRef.current.geometry.attributes.position as BufferAttribute;
-    const posArr = posAttr.array as Float32Array;
+useFrame((_, delta) => {
+  const dt = Math.min(delta, 0.1);   // cap at 100 ms per frame
 
-    for (let i = 0; i < posArr.length; i += 3) {
-      posArr[i + 2] += SPEED * delta;
-      // if it's moved past the camera plane, reset it to the back
-      if (posArr[i + 2] > FIELD_SIZE) {
-        posArr[i    ] = (Math.random() - 0.5) * FIELD_SIZE * 2;
-        posArr[i + 1] = (Math.random() - 0.5) * FIELD_SIZE * 2;
-        posArr[i + 2] = -FIELD_SIZE;
-      }
+  const posAttr = pointsRef.current.geometry.attributes.position as BufferAttribute;
+  const posArr = posAttr.array as Float32Array;
+
+  for (let i = 0; i < posArr.length; i += 3) {
+    posArr[i + 2] += SPEED * dt;
+    if (posArr[i + 2] > FIELD_SIZE) {
+      posArr[i    ] = (Math.random() - 0.5) * FIELD_SIZE * 2;
+      posArr[i + 1] = (Math.random() - 0.5) * FIELD_SIZE * 2;
+      posArr[i + 2] = -FIELD_SIZE;
     }
+  }
 
-    posAttr.needsUpdate = true;
-  });
+  posAttr.needsUpdate = true;
+});
+
 
   return <points ref={pointsRef} geometry={geometry} material={material} />;
 }
