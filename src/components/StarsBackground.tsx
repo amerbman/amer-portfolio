@@ -1,5 +1,5 @@
 // src/components/ParticlesBackground.tsx
-import React, { useRef, useMemo } from "react";
+import { useRef, useMemo } from "react";
 import { Canvas, useFrame, useLoader } from "@react-three/fiber";
 import { TextureLoader, BufferAttribute, AdditiveBlending } from "three";
 import * as THREE from "three";
